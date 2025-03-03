@@ -1,0 +1,20 @@
+config:
+  name: "登录接口测试"
+  variables:
+    username: "testuser"
+    password: "123456"
+  base_url: ""  # 通过 fixture 注入
+
+teststeps:
+- name: "POST /login"
+  request:
+    method: POST
+    url: "/login"
+    json:
+      username: "${username}"
+      password: "${password}"
+    headers:
+      Content-Type: "application/json"
+  validate:
+    - eq: ["status_code", 200]
+    - eq: ["body.success", true]
