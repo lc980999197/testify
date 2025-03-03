@@ -6,7 +6,7 @@ from httprunner import HttpRunner
 # 收集所有 YAML 文件
 def get_yaml_files():
     yaml_files = []
-    yaml_dir = os.path.join(os.path.dirname(__file__), "../yaml_cases")
+    yaml_dir = os.path.join(os.path.dirname(__file__), "tests/yaml_cases")
     for root, _, files in os.walk(yaml_dir):
         for file in files:
             if file.endswith(".yml") or file.endswith(".yaml"):
