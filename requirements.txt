@@ -1,2 +1,4 @@
 httprunner==4.3.5
 pytest==7.2.0
+pydantic==1.10.14
+httprunner[allure]==4.3.5

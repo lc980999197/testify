@@ -1,0 +1,5 @@
+class StatusCode:
+    SUCCESS = 200
+    SYSTEM_ERROR = 500
+    BUSINESS_ERROR = 400
+    PARAM_ERROR = 400

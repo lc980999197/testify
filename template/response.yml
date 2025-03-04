@@ -1,0 +1,16 @@
+code:  # 定义响应码的枚举值， 这里需要根据实际项目来修改，这里仅做演示，在后续用例中会用到
+  success: 0000
+  system_error: 00001
+  business_error: 00002
+  param_error: 00003
+
+body_success_keyword:  code # 响应体成功关键字
+
+body_success_value: 0000  # 响应体成功值
+
+body_message_keyword: message  # 响应体消息关键字
+
+body_data_keyword: data  # 响应体数据关键字,代表了返回的数据封装的容器
+
+
+

@@ -1,7 +1,7 @@
 template:
   headers:
     Content-Type: application/json
-    Authorization: Bearer default_token
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwidXNlcklkIjoiMSIsImFjY291bnQiOiJhZG1pbl9paWYiLCJ1c2VybmFtZSI6Iui2hee6p-euoeeQhuWRmCIsImRlcHROYW1lIjoiIiwiaWF0IjoxNzQwNTM3MTgzLCJleHAiOjE3NDMxMjkxODN9.s5_x2KE6ybT-FZFIPYf9t_nOeNunYEIDDImsklSBAgU
     iifCertificatePermission: true
   timeout: 10  # 请求超时（秒）
   retries: 3   # 重试次数
