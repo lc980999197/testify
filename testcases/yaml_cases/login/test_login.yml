@@ -1,0 +1,18 @@
+config:
+  name: "登录接口测试"
+  base_url: "http://api.example.com"
+  variables:
+    user: "test"
+    password: "123456"
+
+teststeps:
+  - name: "步骤1-获取Token"
+    request:
+      url: "/login"
+      method: POST
+      json:
+        username: "${user}"
+        password: "${password}"
+    validate:
+      - eq: [status_code, 200]
+      - contains: [content.token, "abcdef"]
