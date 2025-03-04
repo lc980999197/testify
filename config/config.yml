@@ -1,0 +1,22 @@
+report:
+  path:  reports  # 默认报告路径
+  archive: 24  # 默认保留月数
+
+env: test  # 默认环境，必须选择自下方环境列表
+environments:  # 环境列表，可以任意自定义
+  test:
+    base_url: http://192.167.0.81:5024
+    db_url: mysql://test:123456@localhost:3306/test_db
+  prod:
+    base_url: http://api.prod.com
+    db_url: mysql://prod:654321@localhost:3306/prod_db
+  local:
+    base_url: http://localhost:5020/#/home
+    db_url: mysql://root:123456@localhost:3306/test_db
+  custom:
+    base_url: http://api.custom.com
+    db_url: mysql://custom:654321@localhost:3306/custom_db
+log:
+  level: info
+  path: logs
+  archive: 3  # 默认保留月数

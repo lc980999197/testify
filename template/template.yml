@@ -1,0 +1,7 @@
+template:
+  headers:
+    Content-Type: application/json
+    Authorization: Bearer default_token
+    iifCertificatePermission: true
+  timeout: 10  # 请求超时（秒）
+  retries: 3   # 重试次数

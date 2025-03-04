@@ -4,6 +4,8 @@ def test_run_yaml(http_runner, yaml_file, base_url):
     summary = http_runner.summary
     assert summary["success"], f"YAML 测试失败: {yaml_file}"
 
+
 def test_dummy(http_runner):
     print("Dummy test running")
     assert True
+
